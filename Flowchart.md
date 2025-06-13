@@ -1,5 +1,5 @@
 ```mermaid
-flowchart TD
+flowchart
     A[Pandas DataFrame\n(Read from Source)] --> B[Insert into Snowflake Table]
 
     B --> C[Batch Job 1:\nIdentify Items for Improvement]
