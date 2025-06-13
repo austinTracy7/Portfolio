@@ -1,19 +1,12 @@
 ```mermaid
 flowchart TD
-    A[Pandas DataFrame] -->|This is a comment| B[Test]
+    A[Pandas DataFrame] -->|Insert Into Snowflake Temporary Table| B[Snowflake Table]
 
-    B --> C[Identify Items for Improvement]
-    C --> D[Snowflake Table]
+    B -->|Identify Columns to Improve| B[Snowflake Table]
+    B -->|Enrich the Data| B[Snowflake Table]
 
-    D --> E[Enrich Data]
-    E --> F[Final Snowflake Table]
-
-    F --> G[Return Enriched Results]
+    B -->|Return Enriched Results| C[Enriched Table]
     
     style A fill:#f9f,stroke:#333,stroke-width:1px
     style B fill:#bbf,stroke:#333,stroke-width:1px
-    style C fill:#ccf,stroke:#333,stroke-width:1px
-    style D fill:#bbf,stroke:#333,stroke-width:1px
-    style E fill:#ccf,stroke:#333,stroke-width:1px
-    style F fill:#bbf,stroke:#333,stroke-width:1px
-    style G fill:#afa,stroke:#333,stroke-width:1px
+    style C fill:#afa,stroke:#333,stroke-width:1px
