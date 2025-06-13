@@ -1,6 +1,6 @@
 ```mermaid
 flowchart TD
-    A[Pandas DataFrame] -->|Insert Into Snowflake Temporary Table| B[Snowflake Table]
+    A[Pandas DataFrame] -->|Upload| B[Snowflake Table]
 
     B -->|Identify Columns to Improve| B[Snowflake Table]
     B -->|Enrich the Data| B[Snowflake Table]
