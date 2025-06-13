@@ -1,6 +1,6 @@
 ```mermaid
 flowchart TD
-    A[Pandas DataFrame] --> B[Test]
+    A[Pandas DataFrame] -->|This is a comment| B[Test]
 
     B --> C[Identify Items for Improvement]
     C --> D[Snowflake Table]
