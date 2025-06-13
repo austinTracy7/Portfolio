@@ -1,6 +1,6 @@
 ```mermaid
 flowchart TD
-    A[Pandas DataFrame] --> B[Insert into Snowflake]
+    A[Pandas DataFrame] -Insert into Snowflake-> B[Snowflake Table]
 
     B --> C[Identify Items for Improvement]
     C --> D[Snowflake Table]
