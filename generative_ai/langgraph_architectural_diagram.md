@@ -13,9 +13,8 @@ flowchart TD
     fix_sql_llm --> test_sql_llm
     get_chart_suggestions --> __end__
     get_sql_llm --> test_sql_llm
-    test_sql_llm -- False --> check_data_ready
-    check_data_ready -- True --> get_data_snowflake_version
-    check_data_ready -- False --> fix_sql_llm
+    test_sql_llm -- True --> get_data_snowflake_version
+    test_sql_llm -- False --> fix_sql_llm
     get_data_snowflake_version -- True --> get_chart_suggestions
     get_data_snowflake_version -- False --> __end_
 ```
