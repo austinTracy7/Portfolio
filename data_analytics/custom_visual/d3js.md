@@ -14,7 +14,7 @@ This project presents a sample of my abilities with:
 - addressing edge cases
 
 ## Visuals
-### Scenarios that Happened
+### Scenarios that Have Happened
 A simple scenario without ties  
 <img src="https://github.com/user-attachments/assets/59cfa365-3b8d-4e54-8071-a20bad9b600c" alt="A barchart with just three bars following a silver, gold, bronze arrangement with matching colors" width="300"/>
 
