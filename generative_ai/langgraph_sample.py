@@ -21,17 +21,8 @@ def create_analysis_pipeline(ai_connection: object, db_connection: object, view_
         "test_sql_llm",
         should_end,
         {
-            True: END,
-            False: "check_data_ready"
-        }
-    )
-    
-    graph.add_conditional_edges(
-        "check_data_ready",
-        test_is_get_data_ready,
-        {
             True: "get_data_snowflake_version",
-            False: "fix_sql_llm"  # Loop back if needed
+            False: "fix_sql_llm"
         }
     )
     
