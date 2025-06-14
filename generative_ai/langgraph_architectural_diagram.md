@@ -6,7 +6,7 @@ flowchart TD
     test_sql_llm["test_sql_llm"]
     get_data_snowflake_version["get_data_snowflake_version"]
     get_chart_suggestions["get_chart_suggestions"]
-    __end__["end"]
+    __end__["__end__"]
 
     __start__ --> get_sql_llm
     fix_sql_llm --> test_sql_llm
